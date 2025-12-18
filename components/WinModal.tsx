@@ -81,7 +81,7 @@ const WinModal: React.FC<WinModalProps> = ({ isOpen, onClose, onReset }) => {
           {/* Glowing background for pig */}
           <div className="absolute inset-0 bg-pink-200 rounded-full blur-md opacity-50 animate-pulse"></div>
           <div className="relative w-28 h-28 bg-white border-4 border-ink rounded-full shadow-sketch flex items-center justify-center animate-[bounce_1s_infinite] overflow-hidden">
-            <img src="/pwa-512x512.png" alt="Happy Pig" className="w-full h-full object-cover" />
+            <img src={`${import.meta.env.BASE_URL}pwa-512x512.png`} alt="Happy Pig" className="w-full h-full object-cover" />
           </div>
         </div>
 
