@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #fdfbf7;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Custom Scrollbar for textareas */
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #2d2d2d;
+  border-radius: 4px;
+  border: 2px solid #fdfbf7;
+}
+
+.hand-drawn-border {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
