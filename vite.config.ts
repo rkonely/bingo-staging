@@ -24,7 +24,8 @@ export default defineConfig(({ mode }) => {
           theme_color: '#ffffff',
           background_color: '#ffffff',
           display: 'standalone',
-          start_url: '/',
+          scope: '/bingo-staging/',
+          start_url: '/bingo-staging/',
           orientation: 'portrait',
           icons: [
             {
