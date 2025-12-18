@@ -80,33 +80,13 @@ const WinModal: React.FC<WinModalProps> = ({ isOpen, onClose, onReset }) => {
         <div className="relative mb-6 inline-flex items-center justify-center w-28 h-28 mx-auto">
           {/* Glowing background for pig */}
           <div className="absolute inset-0 bg-pink-200 rounded-full blur-md opacity-50 animate-pulse"></div>
-          <div className="relative w-28 h-28 bg-pink-300 border-4 border-ink rounded-full shadow-sketch flex items-center justify-center animate-[bounce_1s_infinite]">
-            {/* Happy Pig Face */}
-            <svg viewBox="0 0 100 100" className="w-20 h-20">
-              {/* Ears */}
-              <path d="M 10 10 L 30 30 L 10 40 Z" fill="#f472b6" stroke="#2d2d2d" strokeWidth="3" />
-              <path d="M 90 10 L 70 30 L 90 40 Z" fill="#f472b6" stroke="#2d2d2d" strokeWidth="3" />
-
-              {/* Head */}
-              <circle cx="50" cy="50" r="40" fill="#fbcfe8" stroke="#2d2d2d" strokeWidth="3" />
-
-              {/* Eyes */}
-              <circle cx="35" cy="40" r="4" fill="#2d2d2d" />
-              <circle cx="65" cy="40" r="4" fill="#2d2d2d" />
-
-              {/* Snout */}
-              <ellipse cx="50" cy="58" rx="16" ry="12" fill="#f9a8d4" stroke="#2d2d2d" strokeWidth="2.5" />
-              <circle cx="45" cy="58" r="3" fill="#2d2d2d" />
-              <circle cx="55" cy="58" r="3" fill="#2d2d2d" />
-
-              {/* Smile - hidden under snout but let's make it visible/cheeky */}
-              {/* <path d="M 30 65 Q 50 85 70 65" stroke="#2d2d2d" strokeWidth="3" fill="none" strokeLinecap="round" /> */}
-            </svg>
+          <div className="relative w-28 h-28 bg-white border-4 border-ink rounded-full shadow-sketch flex items-center justify-center animate-[bounce_1s_infinite] overflow-hidden">
+            <img src="/pwa-512x512.png" alt="Happy Pig" className="w-full h-full object-cover" />
           </div>
         </div>
 
         <h3 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mb-2 uppercase tracking-wide transform -rotate-2 drop-shadow-sm filter">
-          SVINKO!
+          PINGO!
         </h3>
         <p className="text-gray-600 text-xl mb-8 font-bold">
           We have a winner!
